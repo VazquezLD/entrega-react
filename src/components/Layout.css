@@ -15,19 +15,23 @@
     display: flex;
     gap: 10px;
 }
+
 .navbarForm{
     height: 50%;
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .navbarLink{
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 25px;
     transition: all 0.3s ease;
+    font-weight: 300;
 }
-.navbarLink:hover{
+
+.active{
+    
     background-color: #6a6854;
     color: white;
 }
@@ -41,11 +45,12 @@
 }
 
 .navbarSpan{
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 22px;
 }
+
 .navbarBrand{
     color: #6a6854;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 25px;
 }

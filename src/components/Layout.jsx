@@ -2,8 +2,15 @@ import React from "react";
 import { Navbar } from "./Navbar";
 import "./Layout"
 
-export const Layout = () => {
+export const Layout = ({children}) => {
     return(
-        <Navbar/>
+        <>
+            <Navbar/>
+            <main>
+                {children}
+            </main>
+            
+        </>
+        
     )
 }
