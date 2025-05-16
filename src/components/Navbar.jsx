@@ -11,10 +11,10 @@ export const Navbar = () => {
             <span className="navbarBrand">BESTPRODUCTS</span>
             <InputProduct/>
             <ul className="navbarLinks">
-                <li className="navbarLink"><NavLink to='/'>Inicio</NavLink></li>
-                <li className="navbarLink"><NavLink  to='/products'>Productos</NavLink></li>
-                <li className="navbarLink" ><NavLink to='/about'>Sobre nosotros</NavLink></li>
-                <li className="navbarLink"><NavLink  to='/contact'>Contacto</NavLink></li>
+                <li><NavLink to='/' className={({ isActive }) => isActive ? "navbarLink active" : "navbarLink"}>Inicio</NavLink></li>
+                <li><NavLink  to='/products' className={({ isActive }) => isActive ? "navbarLink active" : "navbarLink"}>Productos</NavLink></li>
+                <li><NavLink to='/about' className={({ isActive }) => isActive ? "navbarLink active" : "navbarLink"}>Sobre nosotros</NavLink></li>
+                <li><NavLink  to='/contact' className={({ isActive }) => isActive ? "navbarLink active" : "navbarLink"}>Contacto</NavLink></li>
             </ul>
         </nav>
     )

@@ -23,17 +23,18 @@
     gap: 10px;
 }
 
-.navbarLink{
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    font-weight: 300;
+.navbarLink {
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
 }
 
-.active{
-    
-    background-color: #6a6854;
-    color: white;
+.navbarLink.active {
+  background-color: #6a6854;
+  color: white;
 }
 
 .inputProduct{
