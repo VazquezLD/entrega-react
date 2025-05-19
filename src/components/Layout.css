@@ -22,6 +22,10 @@
     align-items: center;
     gap: 10px;
 }
+.cart{
+    cursor: pointer;
+    font-size: 30px;
+}
 
 .navbarLink {
   padding: 10px 20px;

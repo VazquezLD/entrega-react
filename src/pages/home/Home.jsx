@@ -1,9 +1,11 @@
 import React from "react";
 import './Home.css'
+import { OffertContainer } from "./OffertContainer";
 
 export const Home = () => {
     return(
-        <div className="homeContainer">
+        <>
+            <div className="homeContainer">
             <h1>¡Bienvenido a la tienda!</h1>
             <div className="heroContainer">
                 <div className="heroItem">
@@ -18,5 +20,7 @@ export const Home = () => {
                 <div className="heroItem">c</div>
             </div>
         </div>
+        <OffertContainer/>
+        </>
     )
 }
