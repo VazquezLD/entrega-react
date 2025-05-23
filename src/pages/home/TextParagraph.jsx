@@ -14,7 +14,7 @@ export const TextParagraph = () => {
                 </p>
                 <div className="buttonContainer">
                     <button className="button1">Explora</button>
-                    <button className="button2">Preguntas frecuentes</button>
+                    <a href="#faqs"><button className="button2">Preguntas frecuentes</button></a>
                 </div>
             </div>
         </div>

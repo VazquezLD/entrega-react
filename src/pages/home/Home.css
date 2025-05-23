@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     background-color: white;
     margin-left: 200px;
     margin-top: 100px;
@@ -21,8 +20,8 @@
 }
 .textParagraph{
     display: flex;
-    max-width: 90%;
-    justify-content: space-evenly;
+    max-width: 1200px;
+    justify-content: space-around;
 }
 .textContainer{
     width: 45%;
@@ -44,16 +43,23 @@
     background-color: black;
     color: white;
     font-size: 15px;
+    border-radius: 10px;
 }
 .button2{
     padding: 10px;
     border: 2px solid black;
     background-color: transparent;
-    
+    width: 160px;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+.button2:hover{
+    background-color: black;
+    color: white;
 }
 
 .imageContainer{
-    width: 80%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,6 +106,7 @@
     width: 100%;
     height: 250px;
     place-items: center;
+    margin-bottom: 50px;
 }
 
 .ofertContainer2{
@@ -131,5 +138,143 @@
     border-radius: 20px;
     border: #ccc;
     background-color: #faf3f3;
-    font-weight: 100;
+    font-weight: 300;
+}
+.faqsContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faqsSection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.faqsListContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+.faqCard{
+    border-radius: 10px;
+    width: 90%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.faqTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+.faqParag{
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 200;
+    transition: all 0.4s ease, padding 0.4s ease;
+}
+.faqParag.open {
+  max-height: 200px;
+  padding: 10px;
+}
+.faqHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.iconFaq{
+    font-size: 20px;
+    cursor: pointer;
+}
+.textFaq{
+    padding: 30px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #6a6854;
+    height: 140px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.footerList{
+    display: flex;
+    gap: 20px;
+}
+
+.footerIcon{
+    font-size: 25px;
+}
+
+@media (max-width:800px){
+    .homeContainer{
+        margin: 0;
+    }
+    .heroContainer{
+        margin-top: 140px;
+    }
+    .textParagraph{
+        flex-direction: column;
+        gap: 10px;
+        
+        
+    }& h1{
+        font-size: 20px;
+    }& p{
+        font-weight: 200;
+        font-size: 15px;
+    }
+    
+    .textContainer{
+        width: 100%;
+    }
+    .buttonContainer{
+        gap: 10px;
+    }
+    .imageContainer{
+       display: none;
+    }
+    .ofertText{
+        width: 100%;
+    }
+    .ofertTitle{
+        font-size: 15px;
+    }
+    .sectionThemes{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .cardTheme{
+        width: 80%;
+    }
+    .faqsContainer{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .faqsSection{
+        width: 100%;
+    }
+    .faqTitle{
+        font-size: 16px;
+    }
+    .footerList{
+        font-size: 10px;
+    }
 }

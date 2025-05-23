@@ -11,7 +11,10 @@
     z-index: 10;
     border-bottom: 1px solid rgba(0, 0, 0, 0.062);
 }
-
+.navList{
+  display: flex;
+  gap: 10px;
+}
 .navbarForm{
     height: 50%;
     display: flex;
@@ -55,10 +58,36 @@
   color: #666;
   cursor: pointer;
 }
-
-
+.navbarDiv{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputDiv{
+  width: 60%;
+}
 .navbarBrand{
     color: #6a6854;
     font-weight: 900;
     font-size: 25px;
+}
+
+@media (max-width:800px){
+  .navbar{
+    flex-direction: column;
+  }
+  .navbarBrand{
+    font-size: 15px;
+  }
+  .search-bar{
+    width: 70%;
+  }
+  .navbarDiv{
+    width: 100%;
+  }
+  .inputDiv{
+    width: 100%;
+    place-items: center;
+  }
 }

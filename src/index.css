@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Inter;
   background-color: #ffffff;
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 a {

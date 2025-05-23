@@ -15,7 +15,7 @@
     gap: 15px;
     margin-top: 20px;
     border-bottom: 1px solid #6a68544d;
-    padding-bottom: 10px;
+    padding: 10px;
     height: fit-content;
     align-items: center;
 }
@@ -39,4 +39,19 @@
 
 .iconoNav{
     font-size: 25px;
+}
+
+@media (max-width:800px){
+  .asideBar{
+    height: 60px;
+    width: 100%;
+    top:100px;
+  }
+  .navbarLinks{
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 0;
+    gap: 0;
+  }
+
 }
