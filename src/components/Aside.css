@@ -1,0 +1,42 @@
+.asideBar{
+    background-color: #faf3f3;
+    height: calc(100vh - 100px);
+    bottom: 0;
+    width: 200px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarLinks{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+    border-bottom: 1px solid #6a68544d;
+    padding-bottom: 10px;
+    height: fit-content;
+    align-items: center;
+}
+
+.navbarLink.active {
+  background-color: #6a6854;
+  color: white;
+}
+
+.navbarLink {
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  width: 150px;
+}
+
+.iconoNav{
+    font-size: 25px;
+}
