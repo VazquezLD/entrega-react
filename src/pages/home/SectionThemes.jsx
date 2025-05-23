@@ -23,8 +23,8 @@ export const SectionThemes = () => {
             />
 
             <CardTheme 
-            title={'Productos innovadores que se adaptan a tus necesidades y estilo de vida.'}
-            desc={'Todo tipo de productos para cualquier tipo de necesidad, al alcance de tu mano. Nuestros productos combinan funcionalidad y estética para mejorar tu día a día.'}
+            title={'Atención al cliente excepcional para garantizar tu satisfacción total.'}
+            desc={'Estamos aquí para ayudarte en cada paso de tu compra.'}
             src={image3}
             alt={'image-theme'}
             />

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+    
     background-color: white;
     margin-left: 200px;
     margin-top: 100px;
@@ -71,17 +71,16 @@
 .sectionThemes{
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
 }
 
 .cardTheme{
     width: 20%;
-    border-radius: 1px solid black;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .cardTitle{
@@ -94,6 +93,43 @@
 }
 
 .cardImg{
-    width: 100%;
+    width:100%;
+}
 
+.ofertContainer1{
+    width: 100%;
+    height: 250px;
+    place-items: center;
+}
+
+.ofertContainer2{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1096%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(106%2c 104%2c 84%2c 1)'%3e%3c/rect%3e%3cpath d='M -590.1913544332903%2c250 C -494.19%2c272.4 -302.19%2c369 -110.19135443329021%2c362 C 81.81%2c355 177.81%2c211.8 369.8086455667098%2c215 C 561.81%2c218.2 657.81%2c374 849.8086455667097%2c378 C 1041.81%2c382 1211.77%2c234.4 1329.8086455667099%2c235 C 1447.85%2c235.6 1417.96%2c351.8 1440%2c381' stroke='rgba(139%2c 136%2c 111%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -875.4226087836194%2c340 C -779.42%2c308.2 -587.42%2c188 -395.4226087836193%2c181 C -203.42%2c174 -107.42%2c308.8 84.5773912163807%2c305 C 276.58%2c301.2 372.58%2c149.8 564.5773912163806%2c162 C 756.58%2c174.2 869.49%2c374 1044.5773912163806%2c366 C 1219.66%2c358 1360.92%2c170.8 1440%2c122' stroke='rgba(139%2c 136%2c 111%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1096'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    border-radius: 10px;
+    background-position: center;
+}
+
+.ofertText{
+    color: white;
+    width:60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ofertParagraph{
+    font-weight: 200;
+}
+
+.ofertButton{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: #ccc;
+    background-color: #faf3f3;
+    font-weight: 100;
 }

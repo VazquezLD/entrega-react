@@ -1,10 +1,12 @@
 import React from "react";
 import "./Layout"
+import { FiSearch } from "react-icons/fi";
 
 export const InputProduct = () => {
     return(
-        <form className="navbarForm">
-            <input type="text" className="inputProduct" placeholder="Buscar..."/>
-        </form>
+        <div className="search-bar">
+            <input type="text" placeholder="Buscar..." />
+            <span className="icon"><FiSearch /></span>
+        </div>
     )
 }
