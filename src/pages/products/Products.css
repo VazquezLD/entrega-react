@@ -1,12 +1,119 @@
-.productsContainer{
+.productsContainerAll{
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
     background-color: white;
-    justify-content: center;
     margin-left: 200px;
     margin-top: 100px;
     min-height: 100vh;
     overflow-y: hidden;
+    padding: 20px;
+}
+.productsSection{
+    width: 98%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categoriesNav{
+    width: 90%;
+    background-color: #6a6854;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+}
+.navbarCat{
+    cursor: pointer;
+    font-weight: 300;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.navbarCat:active{
+    background-color: white;
+    color: black;
+}
+.productsContanier{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+.productCard{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    cursor: pointer;
+    padding: 10px;
+}
+.imageProduct{
+    width: 100px;
+}
+
+.headerProduct{
+    width: 80%;
+    place-items: end;
+}
+.buttonContainer{
+    font-size: 30px;
+    width: 20%;
+}
+.productButton:hover{
+    transform: scale(1.1);
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.productContent{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    border-top: 1px solid #ccc;
+}
+.tagsContainer{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+    gap: 5px;
+    font-size: 10px;
+    height: 30px;
+}
+.productTag{
+    background-color: #f0ecec;
+    padding: 2px;
+    border-radius: 20px;
+}
+.pricesContainer{
+    display: flex;
+    gap: 10px;
+}
+.productTitle{
+    font-weight: 700;
+}
+.productDiscount{
+    color: saddlebrown;
+    background-color: rgba(179, 101, 45, 0.26);
+    padding: 2px 5px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.rating{
+    font-size: 13px;
+    color: #ff9900;
 }

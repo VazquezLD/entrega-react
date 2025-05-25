@@ -12,7 +12,7 @@ export const FaqsContainer = () => {
                     pagos y devoluciones. Esperamos ayudarte a resolver tus dudas de forma 
                     rápida y sencilla.
                     </p>
-                <button className="button2">Contáctanos</button>
+                <button className="ofertButton">Contáctanos</button>
             </div>
             <div className="faqsSection" >
                 <div className="faqsListContainer">
