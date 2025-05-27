@@ -6,11 +6,13 @@ import { Products } from "../pages/products/Products.jsx";
 import { Contact } from "../pages/contact/Contact.jsx";
 import { About } from "../pages/about/About.jsx";
 import { Cart } from "../pages/cart/Cart.jsx"
+import { SearchProvider } from "../components/ContextProvider.jsx";
 
 const Rutas = () => {
     return(
         <BrowserRouter>
-            <Layout>
+            <SearchProvider>
+                <Layout>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="products" element={<Products/>}/>
@@ -19,6 +21,7 @@ const Rutas = () => {
                     <Route path="cart" element={<Cart/>}/>
                 </Routes>
             </Layout>
+            </SearchProvider>
         </BrowserRouter>
     )
 }

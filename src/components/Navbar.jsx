@@ -7,8 +7,6 @@ import { FiSearch } from "react-icons/fi";
 
 export const Navbar = () => {
 
-
-
     return(
         <>
             <nav className='navbar'>
