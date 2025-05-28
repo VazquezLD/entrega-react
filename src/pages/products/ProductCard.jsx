@@ -3,9 +3,17 @@ import './Products.css'
 import { Tag } from "./Tag";
 import { IoStarOutline } from "react-icons/io5";
 import { CiCirclePlus } from "react-icons/ci";
-
+import { useCart } from "../../components/CartContext";
 
 export const ProductCard = ({products}) => {
+
+    const {cartproducts, setProducts, cartCount, setCartCount} = useCart()
+
+    const addProduct = (prod) => {
+        setCartCount(cartCount + 1)
+        setProducts([...cartproducts, prod])
+    }
+
     return(
         <>
             {products.map(prod => (
@@ -15,7 +23,7 @@ export const ProductCard = ({products}) => {
                         <img src={prod.thumbnail} alt="prodImgage" className="imageProduct" />
                     </div>
                     <div className="buttonContainer">
-                        <CiCirclePlus className="productButton"/>
+                        <CiCirclePlus className="productButton" onClick={() => addProduct(prod)}/>
                     </div>
                     </div>
                     <div className="productContent">

@@ -40,6 +40,21 @@
 .iconoNav{
     font-size: 25px;
 }
+.cartCount {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0px 5px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.cartIconContainer {
+    position: relative;
+    display: inline-block;
+}
 
 @media (max-width:800px){
   .asideBar{
