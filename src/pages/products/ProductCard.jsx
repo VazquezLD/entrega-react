@@ -1,9 +1,10 @@
 import React from "react";
-import './Products.css'
+import '../../styles/Products.css'
 import { Tag } from "./Tag";
 import { IoStarOutline } from "react-icons/io5";
 import { CiCirclePlus } from "react-icons/ci";
-import { useCart } from "../../components/CartContext";
+import { useCart } from "../../context/CartContext";
+
 
 export const ProductCard = ({products}) => {
 

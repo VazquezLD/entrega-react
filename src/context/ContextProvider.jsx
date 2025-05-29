@@ -16,10 +16,12 @@ export function SearchProvider ({children}) {
                 setResults(data.products || [])
                 
             }catch(error){
-                console.log(error)
+                prompt(error)
             }
         }
-        fetchProduct()
+        if (search){
+            fetchProduct()
+        }
     }, [search])
 
     return(

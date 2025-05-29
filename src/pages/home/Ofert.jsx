@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import '../../styles/Home.css'
 import { OfertText } from "./OfertText";
 
 export const OfertContainer = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Layout"
-import { useSearch } from "./ContextProvider";
+import "../styles/Aside.css"
+import { useSearch } from "../context/ContextProvider";
 import { FiSearch } from "react-icons/fi";
 
 export const InputProduct = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import './About.css'
+import '../../styles/About.css'
 import { MdOutlineSentimentSatisfied } from "react-icons/md";
 import { BsHourglassSplit } from "react-icons/bs";
 import { BiSolidOffer } from "react-icons/bi";

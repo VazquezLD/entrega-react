@@ -1,37 +1,77 @@
-import './Products.css'
+import '../../styles/Products.css'
 import React, { useEffect, useState } from "react";
 import { ProductsSection } from "./ProductsSection";
-import { useSearch } from '../../components/ContextProvider';
-import { Footer } from '../home/Footer'
+import { useSearch } from '../../context/ContextProvider';
+import { Footer } from '../home/Footer';
 
 export const Products = () => {
     const [category, setCategory] = useState('')
     const [products, setProducts] = useState([])
+    const [skip, setSkip] = useState(0);
+    const [loading, setLoading] = useState(false)
+    const [hasMore, setHasMore] = useState(true)
     const { search, results } = useSearch()
 
+    const limit = 12
+
     useEffect(() => {
-        const fetchProductsFiltred = async () => {
-            const url = category? `https://dummyjson.com/products/category/${category}` : `https://dummyjson.com/products`
-            try{
+        setProducts([])
+        setSkip(0);
+        setHasMore(true)
+    }, [category])
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            setLoading(true)
+            try {
+                const url = category
+                    ? `https://dummyjson.com/products/category/${category}`
+                    : `https://dummyjson.com/products?limit=${limit}&skip=${skip}`
+
                 const res = await fetch(url)
-                const data = await res.json();
-                setProducts(data.products)
-                
-            }catch(error){
-                console.log(error)
+                const data = await res.json()
+
+                if (category) {
+                    setProducts(data.products)
+                    setHasMore(false)
+                } else {
+                    setProducts((prev) => {
+                        const existingIds = new Set(prev.map((p) => p.id))
+                        const nuevos = data.products.filter((p) => !existingIds.has(p.id))
+                        return [...prev, ...nuevos]
+                    });
+                    setHasMore(skip + limit < data.total)
+                }
+
+            } catch (error) {
+                console.error(error)
             }
-        }
-        fetchProductsFiltred()
-    },[category])
+            setLoading(false)
+        };
 
-    const productsToShow = search ? results : products
+        fetchProducts()
+    }, [category, skip])
 
-    return(
+    const handleLoadMore = () => {
+        setSkip((prev) => prev + limit)
+    }
+
+    const productsToShow = search ? results : products;
+
+    return (
         <>
-        <div className="productsContainerAll">
-            <ProductsSection setCategory={setCategory} products={productsToShow}/>
-        </div>
-        <Footer/>
+            <div className="productsContainerAll">
+                <ProductsSection setCategory={setCategory} products={productsToShow} />
+                {!search && hasMore && (
+                    <div style={{ textAlign: "center", marginTop: "2rem" }}>
+                        <button className="buttonLoading" onClick={handleLoadMore} disabled={loading}>
+                            {loading ? "Cargando..." : "Cargar más"}
+                        </button>
+                    </div>
+                )}
+            </div>
+            <Footer />
         </>
     )
 }
+

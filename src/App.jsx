@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Rutas from "./routes/Routes.jsx"
-import './App.css'
+import './styles/App.css'
 
 function App() {
   return(

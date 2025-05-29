@@ -6,8 +6,8 @@ import { Products } from "../pages/products/Products.jsx";
 import { Contact } from "../pages/contact/Contact.jsx";
 import { About } from "../pages/about/About.jsx";
 import { Cart } from "../pages/cart/Cart.jsx"
-import { SearchProvider } from "../components/ContextProvider.jsx";
-import { CartContext } from "../components/CartContext.jsx";
+import { SearchProvider } from "../context/ContextProvider.jsx";
+import { CartContext } from "../context/CartContext.jsx";
 
 const Rutas = () => {
     return(

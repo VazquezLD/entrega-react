@@ -1,12 +1,12 @@
 import React from "react";
-import './Aside.css'
+import '../styles/Aside.css'
 import { NavLink } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { HiOutlineHome } from "react-icons/hi2";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { PiPants } from "react-icons/pi";
 import { RiContactsLine } from "react-icons/ri";
-import { useCart } from "./CartContext";
+import { useCart } from "../context/CartContext";
 
 export const Aside = () => {
     

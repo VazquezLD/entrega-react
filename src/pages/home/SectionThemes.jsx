@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import '../../styles/Home.css'
 import { CardTheme } from './CardTheme'
 import image1 from '../../assets/themeImg.jpg'
 import image2 from '../../assets/themeImg1.jpg'

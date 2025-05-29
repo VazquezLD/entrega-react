@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import '../../styles/Home.css'
 import { HiPlus } from "react-icons/hi";
 import { useState } from "react";
 

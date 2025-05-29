@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import '../../styles/Home.css'
 import { FaFacebook, FaWhatsapp, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
 
 
@@ -14,11 +14,9 @@ export const Footer = () => {
             </ul>
             <span className="footerSpan">Siguenos en nuestras redes</span>
             <ul className="footerList">
-                <li><a href="#" className="footerIcon"><FaFacebook/></a></li>
-                <li><a href="#" className="footerIcon"><FaWhatsapp/></a></li>
-                <li><a href="#" className="footerIcon"><FaInstagram/></a></li>
-                <li><a href="#" className="footerIcon"><FaGithub/></a></li>
-                <li><a href="#" className="footerIcon"><FaTwitter/></a></li>
+                
+                <li><a href="https://github.com/VazquezLD/entrega-react/tree/main" target="blank" className="footerIcon"><FaGithub/></a></li>
+                
             </ul>
         </div>
     )

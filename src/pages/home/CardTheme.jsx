@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import '../../styles/Home.css'
 
 export const CardTheme = ({title, desc, src, alt}) => {
     return(

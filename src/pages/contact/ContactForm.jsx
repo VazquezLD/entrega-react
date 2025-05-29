@@ -1,5 +1,5 @@
 import React from "react";
-import './Contact.css';
+import '../../styles/Contact.css'
 import { useState, useRef } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { initialValues } from "../../formik/InitialValues";

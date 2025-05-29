@@ -1,9 +1,6 @@
 import React from "react";
-import './Layout.css'
+import '../styles/Layout.css'
 import { InputProduct } from "./InputProduct";
-import { Aside } from "./Aside";
-import { FiSearch } from "react-icons/fi";
-
 
 export const Navbar = () => {
 
@@ -17,7 +14,6 @@ export const Navbar = () => {
                     <InputProduct/>
                 </div>
             </nav>
-            <Aside/>
         </>
     )
 

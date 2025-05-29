@@ -1,5 +1,5 @@
 import React from "react";
-import './About.css'
+import '../../styles/About.css'
 import { Footer } from '../home/Footer'
 import { AboutHero } from "./AboutHero";
 import { AboutSections } from "./AboutSections";

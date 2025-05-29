@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ProductGrid } from "./ProductGrid";
-import { useCart } from "../../components/CartContext";
+import { useCart } from "../../context/CartContext";
+import '../../styles/Cart.css'
 
 export const CartContainer = () => {
 
