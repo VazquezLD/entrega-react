@@ -4,7 +4,7 @@ Este es un proyecto de e-commerce desarrollado con **React** que incluye funcion
 
 ## 🚀 Demo
 
-🔗 [Ver demo en Vercel](https://tuproyecto.vercel.app)
+🔗 [Ver demo en Vercel](https://entrega-react-integrador.vercel.app/)
 
 ## 🧰 Tecnologías Utilizadas
 
@@ -13,7 +13,7 @@ Este es un proyecto de e-commerce desarrollado con **React** que incluye funcion
 - **Formik + Yup** – Manejo y validación de formularios
 - **EmailJS** – Envío de emails desde el frontend
 - **LocalStorage / SessionStorage** – Persistencia de datos
-- **CSS Modules / Tailwind / Styled Components** *(ajustar según tu caso)*
+- **CSS y HTML*
 - **Vercel** – Deploy y hosting
 
 ## ✨ Funcionalidades
@@ -30,5 +30,8 @@ Este es un proyecto de e-commerce desarrollado con **React** que incluye funcion
 
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/tu-repo.git
-   cd tu-repo
+   git clone https://entrega-react-integrador.vercel.app/
+   cd entrega-react-integrador
+2. Instala depeencias
+   ```powershell
+      npm i
