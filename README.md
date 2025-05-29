@@ -13,7 +13,7 @@ Este es un proyecto de e-commerce desarrollado con **React** que incluye funcion
 - **Formik + Yup** – Manejo y validación de formularios
 - **EmailJS** – Envío de emails desde el frontend
 - **LocalStorage / SessionStorage** – Persistencia de datos
-- **CSS y HTML*
+- **CSS y HTML**
 - **Vercel** – Deploy y hosting
 
 ## ✨ Funcionalidades
