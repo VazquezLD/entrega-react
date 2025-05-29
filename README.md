@@ -4,7 +4,7 @@ Este es un proyecto de e-commerce desarrollado con **React** que incluye funcion
 
 ## 🚀 Demo
 
-🔗 [Ver demo en Vercel](https://entrega-react-integrador.vercel.app/)
+🔗 [Ver demo en Vercel](https://entrega-react-tawny.vercel.app/)
 
 ## 🧰 Tecnologías Utilizadas
 
