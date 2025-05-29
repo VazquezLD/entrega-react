@@ -10,8 +10,9 @@ export const TextParagraph = () => {
             </div>
             <div className="textContainer containerST">
                 <p>
-                    Necessitatibus atque quam quasi harum doloremque fuga magni beatae vero quaerat
-                    reprehenderit, nulla odio perspiciatis quia accusamus sed praesentium repellat labore porro.
+                    Descubrí los mejores productos al mejor precio.
+                    En nuestra tienda vas a encontrar calidad, variedad y atención personalizada
+                     para que tu experiencia de compra sea rápida, simple y segura
                 </p>
                 <div className="buttonContainer">
                     <NavLink to ='/products'><button className="button1">Explora</button></NavLink>

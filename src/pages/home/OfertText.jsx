@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css'
+import { NavLink } from "react-router-dom";
 
 export const OfertText = () =>{
     return(
@@ -10,7 +11,7 @@ export const OfertText = () =>{
             <p className="ofertParagraph">
                 Ofrecemos una amplia variedad de ofertas. Descubre soluciones innovadoras que transformarán tu espacio y mejorarán tu vida diaria.
             </p>
-            <button className="ofertButton">Ver ofertas</button>
+            <NavLink to={'/about'}><button className="ofertButton">Nosotros</button></NavLink>
         </div>
     )
 }

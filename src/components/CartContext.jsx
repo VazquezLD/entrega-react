@@ -38,7 +38,12 @@ export function CartContext({ children }) {
       }
     })
     setCantidades(nuevasCantidades)
+    console.log(cartproducts)
   }, [cartproducts]);
+
+  const deleteCart = () => {
+    setProducts([])
+  }
 
   const addToCart = (prod) => {
 
@@ -66,7 +71,7 @@ export function CartContext({ children }) {
   } 
 
   return (
-    <CartProductsContext.Provider value={{addToCart,decreaseQuantity,cartproducts,setProducts,cartCount,setCartCount,cartTotal,setCartTotal,cantidades, uniqueProducts,}}>
+    <CartProductsContext.Provider value={{deleteCart, addToCart,decreaseQuantity,cartproducts,setProducts,cartCount,setCartCount,cartTotal,setCartTotal,cantidades, uniqueProducts,}}>
       {children}
     </CartProductsContext.Provider>
   )
