@@ -12,7 +12,7 @@ export const CategoriesNav = ({ setCategory }) => {
 
     return (
         <ul className="categoriesNav">
-            <li className="navbarCat" onClick={() => handleSearch('beauty')}>Belleza</li>
+            <li className="navbarCat" onClick={() => handleSearch('beauty')}></li>
             <li className="navbarCat" onClick={() => handleSearch('fragrances')}>Fragrances</li>
             <li className="navbarCat" onClick={() => handleSearch('home-decoration')}>Decoración</li>
             <li className="navbarCat" onClick={() => handleSearch('kitchen-accessories')}>Cocina</li>

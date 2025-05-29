@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css'
 import { FaqCard } from "./FaqCard";
+import { NavLink } from "react-router-dom";
 
 export const FaqsContainer = () => {
     return(
@@ -12,7 +13,7 @@ export const FaqsContainer = () => {
                     pagos y devoluciones. Esperamos ayudarte a resolver tus dudas de forma 
                     rápida y sencilla.
                     </p>
-                <button className="ofertButton">Contáctanos</button>
+                <NavLink to='contact'><button className="ofertButton">Contáctanos</button></NavLink>
             </div>
             <div className="faqsSection" >
                 <div className="faqsListContainer">

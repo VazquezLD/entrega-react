@@ -10,3 +10,131 @@
     min-height: 100vh;
     overflow-y: hidden;
 }
+
+.aboutHero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutSections{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.themeSection{
+    width: 70%;
+}
+
+.themeParagraph{
+    font-weight: 300;
+}
+.aboutHeroTitle{
+    margin-top: 20px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #6a6854;
+    color: white;
+}
+.goals{
+    width: 100%;
+    display: flex;
+    background-color: #6a6854;
+    color: white;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.descs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.goal{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goalIcon{
+    width: 50%;
+    color: #d1cda4;
+    height: 50%;
+}
+.goalTitle{
+    font-size: 30px;
+    font-weight: 800;
+}
+.goaldesc{
+    font-weight: 200;
+}
+.heroTeam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  place-items: center;
+}
+.teamMember{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.memberName{
+    font-size: 25px;
+    
+}
+.memberQuote{
+    font-weight: 200;
+}
+@media (max-width: 1200px) {
+  .heroTeam {
+    grid-template-columns: 1fr;
+  }
+  .aboutContainer{
+    margin: 0;
+    margin-top: 160px;
+  }
+
+  .goal{
+    flex-direction: column;
+  }
+  .goalTitle{
+    font-size: 15px;
+  }
+  .goaldesc{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+  .descs{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .themeParagraph{
+    font-size: 12px;
+  }
+  .themeSection{
+    width: 80%;
+  }
+}

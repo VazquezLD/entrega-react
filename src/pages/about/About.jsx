@@ -1,10 +1,17 @@
 import React from "react";
 import './About.css'
+import { Footer } from '../home/Footer'
+import { AboutHero } from "./AboutHero";
+import { AboutSections } from "./AboutSections";
+import { Goals } from "./Goals";
 
 export const About = () => {
     return(
         <div className="aboutContainer">
-            <h1>Pagina About</h1>
+            <AboutHero/>
+            <Goals/>
+            <AboutSections/>
+            <Footer/>
         </div>
     )
 }

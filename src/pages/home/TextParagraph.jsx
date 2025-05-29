@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css'
+import { NavLink } from "react-router-dom";
 
 export const TextParagraph = () => {
     return(
@@ -13,7 +14,7 @@ export const TextParagraph = () => {
                     reprehenderit, nulla odio perspiciatis quia accusamus sed praesentium repellat labore porro.
                 </p>
                 <div className="buttonContainer">
-                    <button className="button1">Explora</button>
+                    <NavLink to ='/products'><button className="button1">Explora</button></NavLink>
                     <a href="#faqs"><button className="button2">Preguntas frecuentes</button></a>
                 </div>
             </div>

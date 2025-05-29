@@ -1,10 +1,13 @@
 import React from "react";
 import './Contact.css'
+import { Footer } from '../home/Footer'
+import { ContactFormContainer } from "./ContactContainer";
 
 export const Contact = () => {
     return(
         <div className="contactContainer">
-            <h1>Pagina Contact</h1>
+            <ContactFormContainer/>
+            <Footer/>
         </div>
     )
 }

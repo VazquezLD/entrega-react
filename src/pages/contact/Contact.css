@@ -2,11 +2,88 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
     background-color: white;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 200px;
     margin-top: 100px;
     min-height: 100vh;
     overflow-y: hidden;
+}
+.contactFormContainer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.contactForm{
+    display: flex;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.inputDivF{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error{
+    color: red;
+}
+.inputField{
+    height: 30px;
+    width: 70%;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.sendButton{
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6a6854;
+    border: none;
+    color: white;
+}
+.inputF{
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 16px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  animation: fadein 0.5s ease-in;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width:800px){
+    .contactContainer{
+        margin: 0;
+
+        margin-top: 160px;
+    }
+    .contactForm{
+        width: 300px;
+    }
 }

@@ -93,6 +93,7 @@
     gap: 5px;
     font-size: 10px;
     height: 30px;
+    flex-wrap: wrap;
 }
 .productTag{
     background-color: #f0ecec;
@@ -116,4 +117,44 @@
 .rating{
     font-size: 13px;
     color: #ff9900;
+}
+
+@media (max-width:800px){
+    .productCard{
+        cursor: none;
+    }
+    .productsContainerAll{
+        margin: 0;
+        margin-top: 160px;
+        padding: 0;
+    }
+    .productDiscount{
+        height: 20px;
+        font-size: 10px;
+    }
+    .productPrice{
+        font-size: 12px;
+    }
+    .productTitle{
+        font-size: 12px;
+    }
+    .productsContanier{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-content: center;
+    }
+    .productContent{
+        gap: 0;
+        height: 45%;
+    }
+    .categoriesNav{
+        width: 100vw;
+        overflow-y: hidden;
+        border-radius: 0;
+        overflow-x: scroll;
+        font-size: 8px;
+    }
+    .navbarCat{
+        padding: 0px 5px;
+    }
 }

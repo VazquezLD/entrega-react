@@ -32,7 +32,7 @@ export const ProductCard = ({products}) => {
                         </span>
 
                         <div className="pricesContainer">
-                            <span className="">
+                            <span className="productPrice">
                                 {`$ ${prod.price}`}
                             </span>
                             <span className="productDiscount">
