@@ -58,14 +58,19 @@ export const Products = () => {
 
     const productsToShow = search ? results : products;
 
-    return (
+        return (
         <>
             <div className="productsContainerAll">
-                <ProductsSection setCategory={setCategory} products={productsToShow} />
-                {!search && hasMore && (
+                {loading && products.length === 0 ? (
+                    <p className="loader">Cargando productos...</p>
+                ) : (
+                    <ProductsSection setCategory={setCategory} products={productsToShow} />
+                )}
+
+                {!search && hasMore && products.length > 0 && (
                     <div style={{ textAlign: "center", marginTop: "2rem" }}>
                         <button className="buttonLoading" onClick={handleLoadMore} disabled={loading}>
-                            {loading ? "Cargando..." : "Cargar más"}
+                            {loading ? "Cargando...":"Cargar más"}
                         </button>
                     </div>
                 )}
@@ -73,5 +78,6 @@ export const Products = () => {
             <Footer />
         </>
     )
+
 }
 

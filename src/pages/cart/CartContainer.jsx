@@ -7,7 +7,7 @@ export const CartContainer = () => {
 
     const [modal, setModal] = useState(false)
     const [buyButton, setBuyButton] = useState(false)
-    const {cartTotal, deleteCart} = useCart()
+    const {cartTotal, deleteCart, cartproducts} = useCart()
 
     const deleteCartShowModal = () => {
         deleteCart()
@@ -47,8 +47,8 @@ export const CartContainer = () => {
                     </div>
                     <div className="cartElementsContainer">
                         <span className="cartTotal">Total ${cartTotal}</span>
-                        <button className="acept" onClick={() => setBuyButton(true)}>Comprar</button>
-                        <button className="decline" onClick={() => {setModal(true)}}>Eliminar carrito</button>
+                        <button className={cartproducts.length? "acept":" aceptbloqued"} onClick={() => {cartproducts.length ? setBuyButton(true): setBuyButton(false)}}>Comprar</button>
+                        <button className={cartproducts.length? "decline":" declinebloqued"} onClick={() => {cartproducts.length ? setModal(true): setModal(false)}}>Eliminar carrito</button>
                     </div>
                 </div>
             </div>

@@ -128,11 +128,30 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.declinebloqued{
+    opacity: 50%;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: not-allowed;
+}
 .acept:hover {
   background-color: #218838;
 }
-
+.aceptbloqued{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: not-allowed;
+    opacity: 50%;
+}
 .decline {
   background-color: #dc3545;
   color: white;
