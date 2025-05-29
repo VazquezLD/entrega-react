@@ -38,7 +38,7 @@ export function CartContext({ children }) {
       }
     })
     setCantidades(nuevasCantidades)
-    console.log(cartproducts)
+    
   }, [cartproducts]);
 
   const deleteCart = () => {
