@@ -52,6 +52,7 @@
     width: 160px;
     transition: all 0.4s ease;
     border-radius: 10px;
+    color: black;
 }
 .button2:hover{
     background-color: black;
@@ -126,6 +127,7 @@
     border-radius: 20px;
     border: #ccc;
     background-color: #faf3f3;
+    color: black;
     font-weight: 300;
 }
 .faqsContainer{
