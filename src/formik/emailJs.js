@@ -8,6 +8,6 @@ export function sendEmail(form) {
         form.current,
         'oaiiAYNgDb83qQXz3'
     )
-    .then(console.log('Enviado'))
-    .catch(console.log('Error'))
+    .then()
+    .catch()
 }
