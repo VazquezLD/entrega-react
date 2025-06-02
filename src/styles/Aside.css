@@ -19,7 +19,9 @@
     height: fit-content;
     align-items: center;
 }
-
+.hidden{
+  display: none;
+}
 .navbarLink.active {
   background-color: #6a6854;
   color: white;
