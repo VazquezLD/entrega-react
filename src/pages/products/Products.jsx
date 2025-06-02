@@ -39,24 +39,21 @@ export const Products = () => {
                         const existingIds = new Set(prev.map((p) => p.id))
                         const nuevos = data.products.filter((p) => !existingIds.has(p.id))
                         return [...prev, ...nuevos]
-                    });
+                    })
                     setHasMore(skip + limit < data.total)
                 }
-
             } catch (error) {
                 console.error(error)
             }
             setLoading(false)
-        };
-
+        }
         fetchProducts()
     }, [category, skip])
 
     const handleLoadMore = () => {
         setSkip((prev) => prev + limit)
     }
-
-    const productsToShow = search ? results : products;
+    const productsToShow = search ? results : products
 
         return (
         <>

@@ -47,8 +47,8 @@ export const ContactForm = () => {
             </div>
 
             <div className="inputDivF">
-              <label htmlFor="issue">Consulta</label>
-              <Field as="textarea" name="issue" placeholder="Escribe tu consulta aquí..." id="issue" className="inputF"/>
+              <label htmlFor="issue">Consulta <span className="optional">(Opcional)</span></label>
+              <Field as="textarea" name="issue" placeholder="Escribe tu consulta aquí..." id="issue" className="inputField inputF"/>
               <ErrorMessage name="issue" component="div" className="error" />
             </div>
 
