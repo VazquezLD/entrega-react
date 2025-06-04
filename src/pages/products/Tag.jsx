@@ -1,4 +1,3 @@
-import React from "react";
 import '../../styles/Products.css'
 
 export const Tag = ({tags}) => {

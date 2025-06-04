@@ -1,5 +1,5 @@
 import '../../styles/Products.css'
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ProductsSection } from "./ProductsSection";
 import { useSearch } from '../../context/ContextProvider';
 import { Footer } from '../home/Footer';

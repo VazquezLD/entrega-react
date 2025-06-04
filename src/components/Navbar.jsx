@@ -1,8 +1,6 @@
-import React from "react";
 import '../styles/Layout.css'
 import { InputProduct } from "./InputProduct";
 import { RxHamburgerMenu } from "react-icons/rx";
-
 
 export const Navbar = ({showNav ,setShowNav}) => {
 

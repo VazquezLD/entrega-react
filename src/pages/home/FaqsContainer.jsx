@@ -1,4 +1,3 @@
-import React from "react";
 import '../../styles/Home.css'
 import { FaqCard } from "./FaqCard";
 import { NavLink } from "react-router-dom";

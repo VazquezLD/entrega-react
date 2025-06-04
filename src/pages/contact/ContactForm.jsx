@@ -1,4 +1,3 @@
-import React from "react";
 import '../../styles/Contact.css'
 import { useState, useRef } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";

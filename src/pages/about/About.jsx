@@ -1,4 +1,3 @@
-import React from "react";
 import '../../styles/About.css'
 import { Footer } from '../home/Footer'
 import { AboutHero } from "./AboutHero";

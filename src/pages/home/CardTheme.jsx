@@ -1,4 +1,3 @@
-import React from "react";
 import '../../styles/Home.css'
 
 export const CardTheme = ({title, desc, src, alt}) => {
